@@ -119,59 +119,59 @@ namespace R6ServerChanger
                 string GameSettingsLocation = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\My Games\\Rainbow Six - Siege\\" + UplayIDText + "\\GameSettings.ini";
                 string GameSettings = File.ReadAllText(GameSettingsLocation);
                 string line = File.ReadLines(GameSettingsLocation).Skip(149).Take(1).First();
-                if ((line == "DataCenterHint=default") || (line == "DataCenterHint=playfab/default"))
+                if ((line == "DataCenterHint=default") || (line == "DataCenterHint=default"))
                 {
                     comboBox2.Text = "default";
                 }
-                else if ((line == "DataCenterHint=eastus") || (line == "DataCenterHint=playfab/eastus"))
+                else if ((line == "DataCenterHint=eastus") || (line == "DataCenterHint=eastus"))
                 {
                     comboBox2.Text = "eastus";
                 }
-                else if ((line == "DataCenterHint=centralus") || (line == "DataCenterHint=playfab/centralus"))
+                else if ((line == "DataCenterHint=centralus") || (line == "DataCenterHint=centralus"))
                 {
                     comboBox2.Text = "centralus";
                 }
-                else if ((line == "DataCenterHint=southcentralus") || (line == "DataCenterHint=playfab/southcentralus"))
+                else if ((line == "DataCenterHint=southcentralus") || (line == "DataCenterHint=southcentralus"))
                 {
                     comboBox2.Text = "southcentralus";
                 }
-                else if ((line == "DataCenterHint=westus") || (line == "DataCenterHint=playfab/westus"))
+                else if ((line == "DataCenterHint=westus") || (line == "DataCenterHint=westus"))
                 {
                     comboBox2.Text = "westus";
                 }
-                else if ((line == "DataCenterHint=brazilsouth") || (line == "DataCenterHint=playfab/brazilsouth"))
+                else if ((line == "DataCenterHint=brazilsouth") || (line == "DataCenterHint=brazilsouth"))
                 {
                     comboBox2.Text = "brazilsouth";
                 }
-                else if ((line == "DataCenterHint=northeurope") || (line == "DataCenterHint=playfab/northeurope"))
+                else if ((line == "DataCenterHint=northeurope") || (line == "DataCenterHint=northeurope"))
                 {
                     comboBox2.Text = "northeurope";
                 }
-                else if ((line == "DataCenterHint=westeurope") || (line == "DataCenterHint=playfab/westeurope"))
+                else if ((line == "DataCenterHint=westeurope") || (line == "DataCenterHint=westeurope"))
                 {
                     comboBox2.Text = "westeurope";
                 }
-                else if ((line == "DataCenterHint=southafricanorth") || (line == "DataCenterHint=playfab/southafricanorth"))
+                else if ((line == "DataCenterHint=southafricanorth") || (line == "DataCenterHint=southafricanorth"))
                 {
                     comboBox2.Text = "southafricanorth";
                 }
-                else if ((line == "DataCenterHint=eastasia") || (line == "DataCenterHint=playfab/eastasia"))
+                else if ((line == "DataCenterHint=eastasia") || (line == "DataCenterHint=eastasia"))
                 {
                     comboBox2.Text = "eastasia";
                 }
-                else if ((line == "DataCenterHint=southeastasia") || (line == "DataCenterHint=playfab/southeastasia"))
+                else if ((line == "DataCenterHint=southeastasia") || (line == "DataCenterHint=southeastasia"))
                 {
                     comboBox2.Text = "southeastasia";
                 }
-                else if ((line == "DataCenterHint=australiaeast") || (line == "DataCenterHint=playfab/australiaeast"))
+                else if ((line == "DataCenterHint=australiaeast") || (line == "DataCenterHint=australiaeast"))
                 {
                     comboBox2.Text = "australiaeast";
                 }
-                else if ((line == "DataCenterHint=australiasoutheast") || (line == "DataCenterHint=playfab/australiasoutheast"))
+                else if ((line == "DataCenterHint=australiasoutheast") || (line == "DataCenterHint=australiasoutheast"))
                 {
                     comboBox2.Text = "australiasoutheast";
                 }
-                else if ((line == "DataCenterHint=japanwest") || (line == "DataCenterHint=playfab/japanwest"))
+                else if ((line == "DataCenterHint=japanwest") || (line == "DataCenterHint=japanwest"))
                 {
                     comboBox2.Text = "japanwest";
                 }
@@ -190,61 +190,61 @@ namespace R6ServerChanger
                 string GameSettingsLocation = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\My Games\\Rainbow Six - Siege\\" + UplayIDText + "\\GameSettings.ini";
                 string GameSettings = File.ReadAllText(GameSettingsLocation);
                 string line = File.ReadLines(GameSettingsLocation).Skip(149).Take(1).First();
-                string selectedServer = "DataCenterHint=playfab/" + comboBox2.Text;
+                string selectedServer = "DataCenterHint=" + comboBox2.Text;
 
-                if ((line == "DataCenterHint=default") || (line == "DataCenterHint=playfab/default"))
+                if ((line == "DataCenterHint=default") || (line == "DataCenterHint=default"))
                 {
                     GameSettings = GameSettings.Replace(line, selectedServer);
                 }
-                else if ((line == "DataCenterHint=eastus") || (line == "DataCenterHint=playfab/eastus"))
+                else if ((line == "DataCenterHint=eastus") || (line == "DataCenterHint=eastus"))
                 {
                     GameSettings = GameSettings.Replace(line, selectedServer);
                 }
-                else if ((line == "DataCenterHint=centralus") || (line == "DataCenterHint=playfab/centralus"))
+                else if ((line == "DataCenterHint=centralus") || (line == "DataCenterHint=centralus"))
                 {
                     GameSettings = GameSettings.Replace(line, selectedServer);
                 }
-                else if ((line == "DataCenterHint=southcentralus") || (line == "DataCenterHint=playfab/southcentralus"))
+                else if ((line == "DataCenterHint=southcentralus") || (line == "DataCenterHint=southcentralus"))
                 {
                     GameSettings = GameSettings.Replace(line, selectedServer);
                 }
-                else if ((line == "DataCenterHint=westus") || (line == "DataCenterHint=playfab/westus"))
+                else if ((line == "DataCenterHint=westus") || (line == "DataCenterHint=westus"))
                 {
                     GameSettings = GameSettings.Replace(line, selectedServer);
                 }
-                else if ((line == "DataCenterHint=brazilsouth") || (line == "DataCenterHint=playfab/brazilsouth"))
+                else if ((line == "DataCenterHint=brazilsouth") || (line == "DataCenterHint=brazilsouth"))
                 {
                     GameSettings = GameSettings.Replace(line, selectedServer);
                 }
-                else if ((line == "DataCenterHint=northeurope") || (line == "DataCenterHint=playfab/northeurope"))
+                else if ((line == "DataCenterHint=northeurope") || (line == "DataCenterHint=northeurope"))
                 {
                     GameSettings = GameSettings.Replace(line, selectedServer);
                 }
-                else if ((line == "DataCenterHint=westeurope") || (line == "DataCenterHint=playfab/westeurope"))
+                else if ((line == "DataCenterHint=westeurope") || (line == "DataCenterHint=westeurope"))
                 {
                     GameSettings = GameSettings.Replace(line, selectedServer);
                 }
-                else if ((line == "DataCenterHint=southafricanorth") || (line == "DataCenterHint=playfab/southafricanorth"))
+                else if ((line == "DataCenterHint=southafricanorth") || (line == "DataCenterHint=southafricanorth"))
                 {
                     GameSettings = GameSettings.Replace(line, selectedServer);
                 }
-                else if ((line == "DataCenterHint=eastasia") || (line == "DataCenterHint=playfab/eastasia"))
+                else if ((line == "DataCenterHint=eastasia") || (line == "DataCenterHint=eastasia"))
                 {
                     GameSettings = GameSettings.Replace(line, selectedServer);
                 }
-                else if ((line == "DataCenterHint=southeastasia") || (line == "DataCenterHint=playfab/southeastasia"))
+                else if ((line == "DataCenterHint=southeastasia") || (line == "DataCenterHint=southeastasia"))
                 {
                     GameSettings = GameSettings.Replace(line, selectedServer);
                 }
-                else if ((line == "DataCenterHint=australiaeast") || (line == "DataCenterHint=playfab/australiaeast"))
+                else if ((line == "DataCenterHint=australiaeast") || (line == "DataCenterHint=australiaeast"))
                 {
                     GameSettings = GameSettings.Replace(line, selectedServer);
                 }
-                else if ((line == "DataCenterHint=australiasoutheast") || (line == "DataCenterHint=playfab/australiasoutheast"))
+                else if ((line == "DataCenterHint=australiasoutheast") || (line == "DataCenterHint=australiasoutheast"))
                 {
                     GameSettings = GameSettings.Replace(line, selectedServer);
                 }
-                else if ((line == "DataCenterHint=japanwest") || (line == "DataCenterHint=playfab/japanwest"))
+                else if ((line == "DataCenterHint=japanwest") || (line == "DataCenterHint=japanwest"))
                 {
                     GameSettings = GameSettings.Replace(line, selectedServer);
                 }
